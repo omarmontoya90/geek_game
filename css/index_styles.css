@@ -1,0 +1,35 @@
+.logo {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	vertical-align: middle;
+}
+
+ul.main {
+	display: inline-block;
+}
+
+ul.main li {
+	display: inline-block;
+}
+
+ul.main ul.sub {
+  display: none;
+}
+
+
+ul.main li:hover > ul.sub {
+  display: block;
+  position: absolute;
+  padding: 0;
+  padding-left: 5px;
+}
+
+ul.sub li {
+	display: block;
+	position: relative;
+}
+
+.barnav {
+	background-color: magenta;
+}
