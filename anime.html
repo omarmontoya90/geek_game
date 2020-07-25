@@ -3,62 +3,38 @@
   <head>
     <title>Geek Game</title>
     <link rel="icon" href="images/geek_game.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="css/main_styles.css">
   </head>
 
   <body>
-    <!-- Menu -->
-    <div>
-      <img src="images/geek_game.png" alt="Logo Principal">
-      <ul>
-	<li>
-	  <a href="index.html">Inicio</a>
-	</li>
-	<li>
-	  <a href="news.html">Noticias</a>
-	</li>
-	<li>
-	  <a href="consoles.html">Consolas</a>
-	  <ul>
-	    <li>
-	      <a href="consoles.html#atari">Atari</a>
-	    </li>
-	    <li>
-	      <a href="consoles.html#nintendo">Nintendo</a>
-	    </li>
-	    <li>
-	      <a href="consoles.html#play_station">Play Station</a>
-	    </li>
-	    <li>
-	      <a href="consoles.html#sega">Sega</a>
-	    </li>
-	    <li>
-	      <a href="consoles.html#xbox">Xbox</a>
-	    </li>
-	  </ul>
-	</li>
-	<li>
-	  <a href="anime.html">Anime</a>
-	  <ul>
-	    <li>
-	      <a href="anime.html#avatar">Avatar: La leyenda de Aang</a>
-	    </li>
-	    <li>
-	      <a href="anime.html#dragon_ball_z">Dragon Ball Z</a>
-	    </li>
-	    <li>
-	      <a href="anime.html#death_note">Death Note</a>
-	    </li>
-	  </ul>
-	</li>
-	<li>
-	  <a href="about.html">Acerca de</a>
-	</li>
-      </ul>
-    </div>
+    <!--Menu-->
+    <nav class="navbar">
+      <a href="index.html">Inicio</a>
+      <a href="news.html">Noticias</a>
+      <div class="dropdown">
+	<a href="consoles.html">Consolas</a>
+	<div class="dropdown-content">
+	  <a href="consoles.html#atari">Atari</a>
+	  <a href="consoles.html#nintendo">Nintendo</a>
+	  <a href="consoles.html#play_station">Play Station</a>
+	  <a href="consoles.html#sega">Sega</a>
+	  <a href="consoles.html#xbox">Xbox</a>
+	</div>
+      </div>
+      <div class="dropdown">
+	<a href="anime.html">Anime</a>
+	<div class="dropdown-content">
+	  <a href="anime.html#avatar">Avatar: La leyenda de Aang</a>
+	  <a href="anime.html#dragon_ball_z">Dragon Ball Z</a>
+	  <a href="anime.html#death_note">Death Note</a>
+	</div>
+      </div>
+      <a href="about.html">Acerca de</a>
+    </nav>
     <!-- End Menu -->
 
     <!-- Content -->
-    <div>
+    <div class="content">
       <h1>Anime</h1>
 
       <h2 id="avatar">Avatar: La leyenda de Aang</h2>
@@ -98,5 +74,10 @@
     </div>
     <!-- End Content -->
 
+    <!-- Footer -->
+    <footer>
+      <img class="logo" src="images/geek_game.png" alt="Logo Principal">
+    </footer>
+    <!-- End Footer -->
   </body>
 </html>
